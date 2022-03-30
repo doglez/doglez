@@ -1,0 +1,40 @@
+$primary: #76ff03;
+$dark: #1c2331;
+$secondary: #fd7e14;
+$font-family-base: "Ubuntu Mono", monospace;
+
+.html-color {
+  background-color: #e34c26 !important;
+}
+.sass-color {
+  background-color: #cd6799 !important;
+}
+.javascript-color {
+  background-color: #f0db4f !important;
+  color: $dark !important;
+}
+.php-color {
+  background-color: #474a8a !important;
+}
+.react-color {
+  background-color: #61dbfb !important;
+  color: $dark !important;
+}
+.bootstrap-color {
+  background-color: #602c50 !important;
+}
+.nodejs-color {
+  background-color: #68a063 !important;
+}
+.mongo-color {
+  background-color: #4db33d !important;
+}
+.mysql-color {
+  background-color: #00758f !important;
+}
+.ubunutu-color {
+  background-color: #dd4814 !important;
+}
+.redhat-color {
+  background-color: #cc0000 !important;
+}
