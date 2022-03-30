@@ -1,6 +1,6 @@
-### Hi there 👋
-
-
+<p align="center">
+  <img src="https://github.com/doglez/doglez/blob/main/src/assets/video/technologicalEarth.mp4" alt="Hi, I'm Danilo Gonzalez Ardon 👋 I'm a 🚀 French developer 🚀 I ❤️ Happy Hardcore ❤️">
+</p>
 
 <!--
 **languages and tools:**
