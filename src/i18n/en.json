@@ -1,0 +1,45 @@
+{
+    "menuItems": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "works": "Works",
+        "contact": "Contacts",
+        "language": "Language"
+    },
+    "homeText": {
+        "text1": "Hellow, my name is",
+        "text2": "I'm a ",
+        "text3": "developer engineer"
+    },
+    "aboutText": {
+        "title": "About me, who am I and what do I do?",
+        "text1": "I am JavaScript Full Stack developer. I am currently live in Honduras, but I am interested in traveling to other countries.",
+        "text2": "I am an organized person, very collaborative and orderly. I like challenges and working on projects both large and small. I am very oriented to working on open source platforms such as servers and at the level of programming languages and databases.",
+        "text3": "Finally, I am a family man and I have 2 princesses, my wife is an independent accountant and together we make a great team because she has her clients and generally I provide them with services such as websites, cloud server management, email management and domain ."
+    },
+    "skillsText": {
+        "title": "Skills and Knowledge",
+        "text1": "My specialty has been directly in web development with the MERN (Mongo-Express-React-Node) stack, but I have also managed Linux servers (Ubuntu, RedHat, Debian, CentOS).",
+        "text2": "I am very interested in developing with open source technologies with JavaScript, and I would like to learn about Android application development with ReactNative."
+    },
+    "worksText": {
+        "title": "Works Portfolio",
+        "text1": "To be continued"
+    },
+    "contactText": {
+        "title": "Contact Me",
+        "name": "Full Name",
+        "email": "Email",
+        "company": "Company Name",
+        "subject": "Subject",
+        "message": "Message",
+        "requiredMessage": "Required",
+        "validName": "Must be more than 5 and less than 30 characters",
+        "validEmail": "Invalid email address",
+        "validCompany": "Must be less than 30 characters",
+        "submit": "Submit",
+        "sentMessage1": "Email sent, ",
+        "sentMessage2": "I will contact you as soon as possible."
+    }
+}
