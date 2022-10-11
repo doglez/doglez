@@ -5,11 +5,6 @@
 /.pnp
 .pnp.js
 
-/src/assets/css
-
-#environments
-.env
-
 # testing
 /coverage
 
