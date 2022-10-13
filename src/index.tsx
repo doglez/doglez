@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "normalize.css";
 import "./assets/scss/styles.scss";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
