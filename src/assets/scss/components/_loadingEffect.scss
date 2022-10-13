@@ -1,6 +1,14 @@
-.loadingPage {
-  color: $primary;
-  background: $dark;
+.data-loading {
   height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    height: 50vh;
+    width: 50vh;
+    border: 2em solid currentColor;
+    border-right-color: transparent;
+    animation: 1.5s linear infinite spinner-border;
+  }
 }

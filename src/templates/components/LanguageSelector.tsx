@@ -26,12 +26,12 @@ const LanguageSelector: FC<ILanguageSelector> = ({
                 aria-labelledby="navbarDropdown"
             >
                 <li className="text-primary px-2">
-                    <Link to="/language/en" onClick={handleDrawer}>
+                    <Link to="/en" onClick={handleDrawer}>
                         English
                     </Link>
                 </li>
                 <li className="text-primary px-2">
-                    <Link to="/language/es" onClick={handleDrawer}>
+                    <Link to="/es" onClick={handleDrawer}>
                         Español
                     </Link>
                 </li>
