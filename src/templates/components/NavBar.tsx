@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../components/Logo";
-import MenuItems from "./components/MenuItems";
+import Logo from "../../components/Logo";
+import MenuItems from "./MenuItems";
 
 const NavBar = () => {
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
