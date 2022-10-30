@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-scroll";
+import ContentHooks from "../../hooks/ContentHooks";
 import LanguageSelector from "./LanguageSelector";
 
 interface IMenuItem {
@@ -8,8 +9,9 @@ interface IMenuItem {
 }
 
 const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
-    const menuList = ["Home", "About", "Skills", "Works", "Contact"];
-    const language = "Language";
+    const textConent = ContentHooks();
+    const menuList = Object.values(textConent.menuItems);
+    const language = textConent.menuItems.language;
 
     const icons = [
         "house-door",
@@ -21,7 +23,7 @@ const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
 
     return (
         <ul className={mobileOpen ? "menu mobileOpen" : "menu"}>
-            {menuList.map((menu, key) => (
+            {icons.map((icon, key) => (
                 <li key={key}>
                     <Link
                         activeClass="active"
@@ -33,8 +35,8 @@ const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
                         duration={500}
                         onClick={handleDrawer}
                     >
-                        <i className={`bi bi-${icons[key]}`} />
-                        {menu}
+                        <i className={`bi bi-${icon}`} />
+                        {menuList[key]}
                     </Link>
                 </li>
             ))}

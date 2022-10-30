@@ -1,11 +1,5 @@
-import React, { FC, useEffect, useReducer } from "react";
-import { Link, useLocation } from "react-router-dom";
-import {
-    setEnglishAction,
-    setSpanishAction,
-} from "../../hooks/reducer/actions";
-import { reducer } from "../../hooks/reducer/reducer";
-import { initialLanguateState } from "../../hooks/reducer/state";
+import React, { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface ILanguageSelector {
     language: string;
@@ -16,23 +10,6 @@ const LanguageSelector: FC<ILanguageSelector> = ({
     language,
     handleDrawer,
 }) => {
-    const location = useLocation();
-    const languageUrl = location.pathname.split("/")[1];
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [state, dispatch] = useReducer(reducer, initialLanguateState);
-
-    const handlePathEvent = () => {
-        handleDrawer();
-    };
-
-    useEffect(() => {
-        if (languageUrl === "en") {
-            dispatch(setEnglishAction);
-        } else if (languageUrl === "es") {
-            dispatch(setSpanishAction);
-        }
-    }, [languageUrl]);
-
     return (
         <>
             <button
@@ -49,12 +26,12 @@ const LanguageSelector: FC<ILanguageSelector> = ({
                 aria-labelledby="navbarDropdown"
             >
                 <li className="text-primary px-2">
-                    <Link to="/en" onClick={handlePathEvent}>
+                    <Link to="/en" onClick={handleDrawer}>
                         English
                     </Link>
                 </li>
                 <li className="text-primary px-2">
-                    <Link to="/es" onClick={handlePathEvent}>
+                    <Link to="/es" onClick={handleDrawer}>
                         Español
                     </Link>
                 </li>
