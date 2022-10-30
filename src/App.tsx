@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import LoadingEffect from "./components/LoadingEffect";
+import Content from "./pages/Content";
 import HeaderApp from "./templates/HeaderApp";
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
                             path="*"
                             element={<Navigate to="/en" replace />}
                         />
-                        <Route path="/en" element={<div>English</div>} />
-                        <Route path="/es" element={<div>Español</div>} />
+                        <Route path="/en" element={<Content />} />
+                        <Route path="/es" element={<Content />} />
                     </Routes>
                 </BrowserRouter>
             )}

@@ -9,9 +9,9 @@ interface IMenuItem {
 }
 
 const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
-    const textConent = ContentHooks();
-    const menuList = Object.values(textConent.menuItems);
-    const language = textConent.menuItems.language;
+    const textContent = ContentHooks();
+    const menuList = Object.values(textContent.menuItems);
+    const language = textContent.menuItems.language;
 
     const icons = [
         "house-door",
