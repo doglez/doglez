@@ -3,6 +3,14 @@ $dark: #1c2331;
 $secondary: #fd7e14;
 $font-family-base: "Ubuntu Mono", monospace;
 
+body {
+  color: $primary;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
 .html-color {
   background-color: #e34c26 !important;
 }
