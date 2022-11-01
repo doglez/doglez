@@ -21,7 +21,8 @@
     "skillsText": {
         "title": "Habilidades y Conocimientos",
         "text1": "Mi especialidad ha estado directamente en desarrollo web con el stack MERN (Mongo-Express-React-Node), pero tambien he administrado servidores Linux (Ubuntu, RedHat, Debian, CentOS).",
-        "text2": "Estoy muy interesado en el desarrollo con tecnologías open source con JavaScript, y me gustaria aprender lo referente al desarrollo para aplicaciones Android con ReactNative."
+        "text2": "Estoy muy interesado en el desarrollo con tecnologías open source con JavaScript, y me gustaria aprender lo referente al desarrollo para aplicaciones Android con ReactNative.",
+        "text3": "años"
     },
     "worksText": {
         "title": "Portafolio de Trabajos",
