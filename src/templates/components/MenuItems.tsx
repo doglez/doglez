@@ -11,6 +11,7 @@ interface IMenuItem {
 const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
     const textContent = ContentHooks();
     const menuList = Object.values(textContent.menuItems);
+    const menuLinks = Object.keys(textContent.menuItems);
     const language = textContent.menuItems.language;
 
     const icons = [
@@ -28,7 +29,7 @@ const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
                     <Link
                         activeClass="active"
                         className="menuLink"
-                        to="home"
+                        to={menuLinks[key]}
                         spy={true}
                         smooth={true}
                         offset={-50}

@@ -8,7 +8,7 @@
 }
 
 .active {
-  color: $secondary;
+  color: $secondary !important;
 }
 
 .menu {
@@ -28,17 +28,22 @@
       li {
         a {
           text-decoration: none;
+          color: $primary;
         }
       }
     }
     a {
       text-decoration: none;
+      color: $primary;
       cursor: pointer;
       padding: 15px 10px;
       font-size: 17px;
       i {
         margin-right: 10px;
       }
+    }
+    :hover {
+      color: $secondary !important;
     }
   }
 }
