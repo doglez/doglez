@@ -38,7 +38,9 @@
         "requiredMessage": "Required",
         "validName": "Must be more than 5 and less than 30 characters",
         "validEmail": "Invalid email address",
-        "validCompany": "Must be less than 30 characters",
+        "validCompany": "Must be more than 3 and less than 30 characters",
+        "validSubject": "Must be more than 5 and less than 30 characters",
+        "validMessage": "Must be more than 20 and less than 200 characters",
         "submit": "Submit",
         "sentMessage1": "Email sent, ",
         "sentMessage2": "I will contact you as soon as possible."

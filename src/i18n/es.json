@@ -38,7 +38,9 @@
         "requiredMessage": "Requiredo",
         "validName": "Debe tener más de 5 y menos de 30 caracteres",
         "validEmail": "Correo electrónico inválido",
-        "validCompany": "Debe tener menos de 30 caracteres",
+        "validCompany": "Debe tener más de 3 y menos de 30 caracteres",
+        "validSubject": "Debe tener más de 5 y menos de 30 caracteres",
+        "validMessage": "Debe tener más de 20 y menos de 200 caracteres",
         "submit": "Enviar",
         "sentMessage1": "Correo enviado, ",
         "sentMessage2": "me pondré en contacto contigo lo antes posible."
