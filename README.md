@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/doglez/doglez/blob/main/src/assets/img/world.gif" alt="https://doglez.com">
+  <img src="https://github.com/doglez/doglez/blob/dev/src/assets/img/world.gif" alt="https://doglez.com">
 </p>
 
 <p>
