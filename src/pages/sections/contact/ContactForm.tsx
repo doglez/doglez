@@ -69,13 +69,13 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
 
     const sendEmail = handleSubmit(async (data) => {
         reset();
+        setEmailSent(true);
         await emailjs.send(
             Config.EMAILJS_SERVICE_ID,
             Config.EMAILJS_TEMPLATE_ID,
             data,
             Config.EMAILJS_PUBLIC_KEY
         );
-        setEmailSent(true);
     });
 
     return (
