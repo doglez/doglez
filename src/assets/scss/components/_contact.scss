@@ -10,3 +10,28 @@
   width: 100%;
   height: 350px;
 }
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $dark;
+    border-color: $primary;
+  }
+  &:active {
+    background-color: $primary;
+    color: $dark;
+    border-color: $primary;
+  }
+  &:focus {
+    background-color: $primary;
+    color: $dark;
+    border-color: $primary;
+    --bs-btn-active-color: $dark;
+    --bs-btn-active-bg: $primary;
+    --bs-btn-active-border-color: $primary;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+}

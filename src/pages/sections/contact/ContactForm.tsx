@@ -119,7 +119,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             </div>
                         )}
 
-                        <label className="fs-5 pb-1 pt-4" htmlFor="emailInput">
+                        <label className="fs-5 py-1" htmlFor="emailInput">
                             {contactText.email}
                         </label>
                         <input
@@ -136,10 +136,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             </div>
                         )}
 
-                        <label
-                            className="fs-5 pb-1 pt-4"
-                            htmlFor="companyInput"
-                        >
+                        <label className="fs-5 py-1" htmlFor="companyInput">
                             {contactText.company}
                         </label>
                         <input
@@ -156,10 +153,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             </div>
                         )}
 
-                        <label
-                            htmlFor="subjectInput"
-                            className="fs-5 pb-1 pt-4"
-                        >
+                        <label htmlFor="subjectInput" className="fs-5 py-1">
                             {contactText.subject}
                         </label>
                         <input
@@ -175,10 +169,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             </div>
                         )}
 
-                        <label
-                            className="fs-5 pb-1 pt-4"
-                            htmlFor="messageInput"
-                        >
+                        <label className="fs-5 py-1" htmlFor="messageInput">
                             {contactText.message}
                         </label>
                         <textarea
@@ -195,7 +186,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
 
                         <button
                             type="submit"
-                            className=" mt-4 col-3 btn btn-outline-primary"
+                            className="mt-3 col-3 btn btn-outline-primary"
                         >
                             {contactText.submit}
                         </button>
