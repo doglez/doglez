@@ -1,6 +1,7 @@
 {
     "name": "doglez",
     "version": "0.1.0",
+    "homepage": "https://doglez.com",
     "private": true,
     "dependencies": {
         "@emailjs/browser": "^3.9.0",
