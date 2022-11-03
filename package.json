@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "homepage": "https://doglez.com",
     "private": true,
+    "engines": {
+        "node": ">=16.17.0"
+    },
     "dependencies": {
         "@emailjs/browser": "^3.9.0",
         "@hookform/resolvers": "^2.9.10",
