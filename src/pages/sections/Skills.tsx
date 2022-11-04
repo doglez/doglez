@@ -41,9 +41,6 @@ const Skills = () => {
                     </div>
                     <div className="col-lg-6 col-sm-12">
                         <Zoom>
-                            <h5 className="text-center">
-                                Tech Stack Experience
-                            </h5>
                             {techStackInfo.map((info, key) => (
                                 <div className="progress my-2" key={key}>
                                     <div

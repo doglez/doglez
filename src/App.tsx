@@ -14,23 +14,30 @@ function App() {
     }, [loadingPage]);
 
     return (
-        <>
+        <BrowserRouter>
             {loadingPage ? (
                 <LoadingEffect />
             ) : (
-                <BrowserRouter>
+                <>
                     <HeaderApp />
                     <Routes>
                         <Route
-                            path="*"
+                            path="/"
                             element={<Navigate to="/en" replace />}
                         />
-                        <Route path="/en" element={<Content />} />
-                        <Route path="/es" element={<Content />} />
+                        <Route path="/">
+                            <Route path="en" element={<Content />} />
+                            <Route path="es" element={<Content />} />
+                            <Route
+                                path="*"
+                                element={<Navigate to="/en" replace />}
+                            />
+                        </Route>
+                        <Route path="*" element={<div>404 Not Found</div>} />
                     </Routes>
-                </BrowserRouter>
+                </>
             )}
-        </>
+        </BrowserRouter>
     );
 }
 
