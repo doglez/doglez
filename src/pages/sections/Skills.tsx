@@ -1,10 +1,10 @@
-import React from "react";
-import ContentHooks from "../../hooks/ContentHooks";
+import React, { useContext } from "react";
 import { Bounce, Zoom } from "react-awesome-reveal";
+import { StoreContext } from "../../store/StoreProvider";
 
 const Skills = () => {
-    const textContent = ContentHooks();
-    const skillsText = textContent.skillsText;
+    const { state } = useContext(StoreContext);
+    const skillsText = state.skillsText;
     const techStack = {
         HTML: 2015,
         CSS: 2015,

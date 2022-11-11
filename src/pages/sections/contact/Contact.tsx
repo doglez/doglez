@@ -1,11 +1,11 @@
-import React from "react";
-import ContentHooks from "../../../hooks/ContentHooks";
+import React, { useContext } from "react";
 import { Fade, Bounce } from "react-awesome-reveal";
 import ContactForm from "./ContactForm";
+import { StoreContext } from "../../../store/StoreProvider";
 
 const Contact = () => {
-    const textContent = ContentHooks();
-    const contactText = textContent.contactText;
+    const { state } = useContext(StoreContext);
+    const contactText = state.contactText;
 
     return (
         <section id="contact" className="pt-4 container">
