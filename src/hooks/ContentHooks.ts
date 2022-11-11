@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import englishData from "../i18n/en.json";
 import spanishDAta from "../i18n/es.json";
 
@@ -9,16 +8,15 @@ import spanishDAta from "../i18n/es.json";
  * @returns {Object} Content
  */
 const ContentHooks = () => {
-    const location = useLocation();
-    const languageUrl = location.pathname.split("/")[1];
     const [content, setContent] = useState(englishData);
+    const language = "en";
     useEffect(() => {
-        if (languageUrl === "en") {
+        if (language === "en") {
             setContent(englishData);
-        } else if (languageUrl === "es") {
+        } else if (language === "es") {
             setContent(spanishDAta);
         }
-    }, [languageUrl]);
+    }, [language]);
 
     return content;
 };
