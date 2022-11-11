@@ -6,7 +6,12 @@ enum LanguageActionKind {
     SPANISH = "SPANISH",
 }
 
-export interface IInitialStore {
+export const types = {
+    ENGLISH: "ENGLISH",
+    SPANISH: "SPANISH",
+};
+
+export interface IInitialState {
     menuItems: {
         home: string;
         about: string;
@@ -57,18 +62,18 @@ export interface IInitialStore {
 
 interface ILanguageAction {
     type: LanguageActionKind;
-    payload: IInitialStore;
+    payload: IInitialState;
 }
 
-export const initialStore = english;
+export const initialState = english;
 
-const StoreReducer = (state: IInitialStore, action: ILanguageAction) => {
+const StoreReducer = (state: IInitialState, action: ILanguageAction) => {
     switch (action.type) {
         case LanguageActionKind.ENGLISH:
-            return { ...state, payload: english };
+            return english;
 
         case LanguageActionKind.SPANISH:
-            return { ...state, payload: spanish };
+            return spanish;
 
         default:
             return state;

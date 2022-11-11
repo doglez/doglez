@@ -1,17 +1,17 @@
 import React, { createContext, Dispatch, FC, useReducer } from "react";
-import StoreReducer, { IInitialStore, initialStore } from "./StoreReducer";
+import StoreReducer, { IInitialState, initialState } from "./StoreReducer";
 
 interface IStoreProvider {
     children: JSX.Element;
 }
 
 export const StoreContext = createContext<{
-    state: IInitialStore;
+    state: IInitialState;
     dispatch: Dispatch<any>;
-}>({ state: initialStore, dispatch: () => null });
+}>({ state: initialState, dispatch: () => null });
 
 const StoreProvider: FC<IStoreProvider> = ({ children }) => {
-    const [state, dispatch] = useReducer(StoreReducer, initialStore);
+    const [state, dispatch] = useReducer(StoreReducer, initialState);
 
     return (
         <StoreContext.Provider value={{ state, dispatch }}>

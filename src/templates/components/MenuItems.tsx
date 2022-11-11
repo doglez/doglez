@@ -41,10 +41,7 @@ const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
                 </li>
             ))}
             <li>
-                <LanguageSelector
-                    language={menuList[icons.length]}
-                    handleDrawer={handleDrawer}
-                />
+                <LanguageSelector handleDrawer={handleDrawer} />
             </li>
         </ul>
     );

@@ -1,27 +1,30 @@
-import React, { FC, useContext } from "react";
+import React, { FC, useContext, useState } from "react";
 import { StoreContext } from "../../store/StoreProvider";
+import { types } from "../../store/StoreReducer";
 
 interface ILanguageSelector {
-    language: string;
     handleDrawer: (() => void) & React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const LanguageSelector: FC<ILanguageSelector> = ({
-    language,
-    handleDrawer,
-}) => {
-    const { dispatch } = useContext(StoreContext);
+const LanguageSelector: FC<ILanguageSelector> = ({ handleDrawer }) => {
+    const { state, dispatch } = useContext(StoreContext);
+    const [englishLanguage, setEnglishLanguage] = useState(false);
 
     const handleLanguage = () => {
         handleDrawer();
-        dispatch({});
+        if (englishLanguage) {
+            dispatch({ type: types.ENGLISH });
+        } else {
+            dispatch({ type: types.SPANISH });
+        }
+        setEnglishLanguage(!englishLanguage);
     };
 
     return (
         // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a className="menuLink" onClick={handleLanguage}>
             <i className="bi bi-globe" />
-            {language}
+            {state.menuItems.language}
         </a>
     );
 };
