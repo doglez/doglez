@@ -1,11 +1,11 @@
-import React from "react";
-import ContentHooks from "../../hooks/ContentHooks";
+import React, { useContext } from "react";
 import myPhoto from "../../assets/img/myPhoto.jpg";
 import { Fade } from "react-awesome-reveal";
+import { StoreContext } from "../../store/StoreProvider";
 
 const About = () => {
-    const textContent = ContentHooks();
-    const aboutText = textContent.aboutText;
+    const { state } = useContext(StoreContext);
+    const aboutText = state.aboutText;
 
     return (
         <section id="about" className="py-5">

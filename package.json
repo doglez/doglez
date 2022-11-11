@@ -4,7 +4,7 @@
     "homepage": "https://doglez.com",
     "private": true,
     "engines": {
-        "node": ">=16.17.0"
+        "node": ">=18.12.1"
     },
     "dependencies": {
         "@emailjs/browser": "^3.9.0",
@@ -23,7 +23,6 @@
         "react-dom": "^18.2.0",
         "react-hook-form": "^7.39.0",
         "react-parallax": "^3.5.1",
-        "react-router-dom": "^6.4.2",
         "react-scripts": "5.0.1",
         "react-scroll": "^1.8.7",
         "react-typing-effect": "^2.0.5",

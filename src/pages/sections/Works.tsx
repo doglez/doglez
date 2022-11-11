@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Parallax } from "react-parallax";
-import ContentHooks from "../../hooks/ContentHooks";
 import CleanDesktopImg from "../../assets/img/clean-desktop.jpg";
+import { StoreContext } from "../../store/StoreProvider";
 
 const Works = () => {
-    const textContent = ContentHooks();
-    const worksText = textContent.worksText;
+    const { state } = useContext(StoreContext);
+    const worksText = state.worksText;
 
     return (
         <Parallax

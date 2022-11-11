@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { FC, useContext } from "react";
 import { Link } from "react-scroll";
-import ContentHooks from "../../hooks/ContentHooks";
+import { StoreContext } from "../../store/StoreProvider";
 import LanguageSelector from "./LanguageSelector";
 
 interface IMenuItem {
@@ -9,10 +9,9 @@ interface IMenuItem {
 }
 
 const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
-    const textContent = ContentHooks();
-    const menuList = Object.values(textContent.menuItems);
-    const menuLinks = Object.keys(textContent.menuItems);
-    const language = textContent.menuItems.language;
+    const { state } = useContext(StoreContext);
+    const menuList = Object.values(state.menuItems);
+    const menuLinks = Object.keys(state.menuItems);
 
     const icons = [
         "house-door",
@@ -41,11 +40,8 @@ const MenuItems: FC<IMenuItem> = ({ mobileOpen, handleDrawer }) => {
                     </Link>
                 </li>
             ))}
-            <li className="dropdown-center my-3 my-lg-0">
-                <LanguageSelector
-                    handleDrawer={handleDrawer}
-                    language={language}
-                />
+            <li>
+                <LanguageSelector handleDrawer={handleDrawer} />
             </li>
         </ul>
     );
