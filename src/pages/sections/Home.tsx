@@ -1,11 +1,11 @@
-import React from "react";
-import ContentHooks from "../../hooks/ContentHooks";
+import React, { useContext } from "react";
 import TechnologicalEarth from "../../assets/video/technologicalEarth.mp4";
 import ReactTypingEffect from "react-typing-effect";
+import { StoreContext } from "../../store/StoreProvider";
 
 const Home = () => {
-    const textContent = ContentHooks();
-    const homeText = textContent.homeText;
+    const { state } = useContext(StoreContext);
+    const homeText = state.homeText;
 
     return (
         <section id="home" className="home">
