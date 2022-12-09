@@ -63,6 +63,7 @@ const Skills = () => {
                                         )}
                                         aria-valuemin={0}
                                         aria-valuemax={100}
+                                        aria-label={techStackInfo[key]}
                                     >
                                         {info}{" "}
                                         {currentYear - techStackYears[key]}{" "}
