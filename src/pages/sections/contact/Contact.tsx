@@ -19,6 +19,7 @@ const Contact = () => {
                                 <a
                                     href="mailto:contact@doglez.com"
                                     className="fs-5 text-secondary text-decoration-none "
+                                    aria-label="Email contact"
                                 >
                                     <i className="bi bi-envelope-fill me-2" />
                                     contact@doglez.com
@@ -28,7 +29,8 @@ const Contact = () => {
                             <div className="col-lg-6 col-md-12">
                                 <a
                                     href="tel:+50497373565"
-                                    className="fs-5 text-secondary text-decoration-none "
+                                    className="fs-5 text-secondary text-decoration-none"
+                                    aria-label="Celphone contact"
                                 >
                                     <i className="bi bi-phone-vibrate-fill me-2" />
                                     +504 9737-3565
@@ -40,6 +42,7 @@ const Contact = () => {
                                     className="fs-5 text-secondary text-decoration-none "
                                     target="_blank"
                                     rel="noreferrer"
+                                    aria-label="GitHub page"
                                 >
                                     <i className="bi bi-github me-2" />
                                 </a>
@@ -48,6 +51,7 @@ const Contact = () => {
                                     className="fs-5 text-secondary text-decoration-none "
                                     target="_blank"
                                     rel="noreferrer"
+                                    aria-label="LinkedIn page"
                                 >
                                     <i className="bi bi-linkedin me-2" />
                                 </a>
@@ -56,6 +60,7 @@ const Contact = () => {
                                     className="fs-5 text-secondary text-decoration-none "
                                     target="_blank"
                                     rel="noreferrer"
+                                    aria-label="Twitter page"
                                 >
                                     <i className="bi bi-twitter me-2" />
                                 </a>

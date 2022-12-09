@@ -106,6 +106,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             {contactText.name}
                         </label>
                         <input
+                            id="nameInput"
                             className="fs-5 text-secondary"
                             type="text"
                             {...register("nameInput")}
@@ -123,6 +124,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             {contactText.email}
                         </label>
                         <input
+                            id="emailInput"
                             className="fs-5 text-secondary"
                             type="email"
                             {...register("emailInput")}
@@ -140,6 +142,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             {contactText.company}
                         </label>
                         <input
+                            id="companyInput"
                             className="fs-5 text-secondary"
                             type="text"
                             {...register("companyInput")}
@@ -157,6 +160,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             {contactText.subject}
                         </label>
                         <input
+                            id="subjectInput"
                             type="text"
                             className="fs-5 text-secondary"
                             {...register("subjectInput")}
@@ -173,6 +177,7 @@ const ContactForm: FC<IContactForm> = ({ contactText }) => {
                             {contactText.message}
                         </label>
                         <textarea
+                            id="messageInput"
                             className="fs-5 text-secondary"
                             {...register("messageInput")}
                         />
