@@ -10,17 +10,17 @@
     "homeText": {
         "text1": "Hellow, my name is",
         "text2": "I'm a ",
-        "text3": "developer engineer"
+        "text3": "engineer"
     },
     "aboutText": {
         "title": "About me, who am I and what do I do?",
-        "text1": "I am a Full Stack developer engineer with JavaScript and experience in all stages of the development cycle of dynamic web projects. I currently reside in Honduras, but I am interested in living in other countries, such as Canada, United States, Netherlands, Spain, United Kingdom or Ireland.",
+        "text1": "I am a Full Stack engineer with JavaScript and experience in all stages of the development cycle of dynamic web projects. I currently reside in Honduras, but I am interested in living in other countries, such as Canada, United States, Netherlands, Spain, United Kingdom or Ireland.",
         "text2": "I am an organized person, very collaborative and creative. I like challenges and working on projects both large and small. I am very oriented to work on open source platforms such as servers and at the level of programming languages and databases.",
         "text3": "I have a Bachelor's Degree in Mechanical Engineering, an MBA and I am currently finishing a Master's Degree in Software Engineering and Information Systems. I have experience as Technology Manager, personnel management, customer relations and control of budgets and expenses."
     },
     "skillsText": {
         "title": "Skills and Knowledge",
-        "text1": "My specialty has been directly in web development with the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), but I have also managed Linux servers (Ubuntu, RedHat, Debian, CentOS) and I am studying C# with .Net to be more competitive in the market",
+        "text1": "My specialty has been directly in web development with the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), but I have also managed Linux servers (Ubuntu, RedHat, Debian, CentOS) and I am studying JAVA with Spring Boot to be more competitive in the market",
         "text2": "I am very interested in developing with open source technologies with JavaScript, and I would like to learn Android application development with ReactNative in the future.",
         "text3": "years"
     },
