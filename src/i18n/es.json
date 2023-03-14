@@ -16,11 +16,11 @@
         "title": "Acerca de mí, ¿quién soy y qué hago?",
         "text1": "Soy ingeniero Full Stack con JavaScript y con experiencia en todas las etapas del ciclo de desarrollo de proyectos web dinámicos. Actualmente resido en Honduras, pero me interesa vivir en otros países, como Canadá, Estados Unidos, Holanda, España, Reino Unido o Irlanda.",
         "text2": "Soy una persona organizado, muy colaborador y creativo. Me gustan los retos y trabajar en proyectos tanto grandes como pequeños. Estoy muy orientado a trabajar en plataformas de código abierto como servidores y a nivel de lenguajes de programación y bases de datos.",
-        "text3": "Tengo una grado en Ingeniería Mecánica, un MBA y actualmente estoy terminando una Maestría en Ingeniería de Software y Sistemas de Información. Tengo experiencia como Gerente de Tecnología, manejo de personal, relación con los clientes y control de presupuestos y gastos."
+        "text3": "Tengo una Licenciatura en Ingeniería Mecánica, un MBA y una Maestría en Ingeniería de Software y Sistemas de Información. Tengo experiencia como Gerente de Tecnología, manejo de personal, relación con los clientes y control de presupuestos y gastos."
     },
     "skillsText": {
         "title": "Habilidades y Conocimientos",
-        "text1": "Mi especialidad ha sido directamente en desarrollo web con el stack MERN (MongoDB, ExpressJS, ReactJS, NodeJS), pero también he administrado servidores Linux (Ubuntu, RedHat, Debian, CentOS) y estoy estudiando JAVA con Spring Boot para ser más competitivo en el mercado.",
+        "text1": "Mi especialidad ha sido directamente en desarrollo web con los stacks MERN, MyERN and PERN (MongoDB, MySQL o PostgreSQL, ExpressJS, ReactJS, NodeJS), pero también he administrado servidores Linux (Ubuntu, RedHat, Debian, CentOS) y estoy estudiando JAVA con Spring Boot para ser más competitivo en el mercado.",
         "text2": "Estoy muy interesado en el desarrollo con tecnologías open source con JavaScript, y me gustaria en el futuro aprender el desarrollo para aplicaciones Android con ReactNative.",
         "text3": "años"
     },
